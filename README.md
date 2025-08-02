@@ -1,8 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CV Scanner SaaS
+
+A modern web application for companies to manage and analyze CV/resume uploads from applicants using AI-powered scanning technology.
+
+## Features
+
+- **User Authentication**: Complete authentication system with different user roles (company admins and applicants)
+- **Company Management**: Create and manage company profiles
+- **CV Upload & Analysis**: Upload and automatically analyze CV documents
+- **AI Integration**: Extract key information from CVs using Gemini AI
+- **Dashboard**: View analytics and manage uploaded CVs
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+
+## Tech Stack
+
+- **Frontend**: Next.js 14 with App Router, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, Supabase
+- **Authentication**: Supabase Auth
+- **Database**: PostgreSQL (via Supabase)
+- **File Storage**: Supabase Storage
+- **AI Processing**: Google Gemini API
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm/yarn
+- Supabase account
+- Google Cloud account (for Gemini API)
+
+### Environment Setup
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+GOOGLE_GEMINI_API_KEY=your_gemini_api_key
+```
+
+Replace `your_supabase_url`, `your_supabase_anon_key`, and `your_gemini_api_key` with your actual Supabase and Google Gemini API credentials.
+
+### Install Dependencies
+
+Install the required dependencies by running one of the following commands:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### Run the Development Server
+
+Start the development server with one of the following commands:
 
 ```bash
 npm run dev
